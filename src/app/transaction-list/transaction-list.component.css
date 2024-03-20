@@ -1,0 +1,39 @@
+/* Apply basic table styles */
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+  }
+  
+  /* Style table header */
+  thead {
+    background-color:#7e57c2
+  }
+  
+  /* Style table header cells */
+  th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #27023e;
+    text-align: center;
+  }
+  
+  /* Style table body cells */
+  td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #27023e;
+  }
+  
+  /* Style odd rows with a different background color */
+  tbody tr:nth-child(odd) {
+    background-color: #bba4e0;
+  }
+  
+  /* Style hover effect on table rows */
+  tbody tr:hover {
+    background-color: #e0bbdb;
+  }
+
+

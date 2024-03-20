@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ex3-router';
+  time = Date.now();
+  
+  constructor(){
+    setInterval(() => {
+			this.time = Date.now();
+		}, 1000);
+	}
+
 }
