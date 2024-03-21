@@ -28,7 +28,13 @@ export class TransactionListComponent implements OnInit{
 	orderByDate() {
 		if(this.currentSort === 'date') {
 			this.transaction_list = this.transaction_list.reverse();
-			document.getElementById('date')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';
+			let direction = document.getElementById('date')!.getElementsByTagName('i')[0].className;
+			if ( direction === 'bi bi-chevron-up' ) {
+				document.getElementById('date')!.getElementsByTagName('i')[0].className='bi bi-chevron-down';	
+			} 
+			else {
+				document.getElementById('date')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';	
+			}
 		}
 		else {
 			this.transaction_list = this.transaction_list.toSorted(this.sortByDate);
@@ -41,7 +47,13 @@ export class TransactionListComponent implements OnInit{
 	orderByLabel() { 
 		if(this.currentSort === 'label') {
 			this.transaction_list = this.transaction_list.reverse();
-			document.getElementById('label')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';
+			let direction = document.getElementById('label')!.getElementsByTagName('i')[0].className;
+			if ( direction === 'bi bi-chevron-up' ) {
+				document.getElementById('label')!.getElementsByTagName('i')[0].className='bi bi-chevron-down';	
+			} 
+			else {
+				document.getElementById('label')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';	
+			}
 		}
 		else {
 			this.transaction_list = this.transaction_list.toSorted(this.sortByLabel);
@@ -54,7 +66,13 @@ export class TransactionListComponent implements OnInit{
 	orderByAmount() { 
 		if(this.currentSort === 'amount') {
 			this.transaction_list = this.transaction_list.reverse();
-			document.getElementById('amount')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';
+			let direction = document.getElementById('amount')!.getElementsByTagName('i')[0].className;
+			if ( direction === 'bi bi-chevron-up' ) {
+				document.getElementById('amount')!.getElementsByTagName('i')[0].className='bi bi-chevron-down';	
+			} 
+			else {
+				document.getElementById('amount')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';	
+			}
 		}
 		else {
 			this.transaction_list = this.transaction_list.toSorted(this.sortByAmount);
@@ -67,7 +85,13 @@ export class TransactionListComponent implements OnInit{
 	orderByBalance() { 
 		if(this.currentSort === 'balance') {
 			this.transaction_list = this.transaction_list.reverse();
-			document.getElementById('balance')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';
+			let direction = document.getElementById('balance')!.getElementsByTagName('i')[0].className;
+			if ( direction === 'bi bi-chevron-up' ) {
+				document.getElementById('balance')!.getElementsByTagName('i')[0].className='bi bi-chevron-down';	
+			} 
+			else {
+				document.getElementById('balance')!.getElementsByTagName('i')[0].className='bi bi-chevron-up';	
+			}
 		}
 		else {
 			this.transaction_list = this.transaction_list.toSorted(this.sortByBalance);
