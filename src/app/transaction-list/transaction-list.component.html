@@ -12,7 +12,7 @@
       *ngFor="let transaction of transaction_list"
       routerLink="/detail/{{ transaction.id }}"
     >
-      <td>{{ transaction.date }}</td>
+      <td>{{ transaction.date | date : "medium" }}</td>
       <td>{{ transaction.label }}</td>
       <td>{{ transaction.amount }}</td>
       <td>{{ transaction.balance }}</td>
